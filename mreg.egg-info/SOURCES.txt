@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mreg/__init__.py
+mreg/mreg.py
+mreg.egg-info/PKG-INFO
+mreg.egg-info/SOURCES.txt
+mreg.egg-info/dependency_links.txt
+mreg.egg-info/top_level.txt
