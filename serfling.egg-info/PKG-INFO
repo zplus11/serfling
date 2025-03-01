@@ -1,7 +1,7 @@
 Metadata-Version: 2.2
-Name: mreg
+Name: serfling
 Version: 1.0.0
-Summary: Matrix Regression
+Summary: Serfling model regression using matrix approach
 Author: Naman Taggar
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
@@ -16,9 +16,19 @@ Dynamic: description-content-type
 Dynamic: requires-python
 Dynamic: summary
 
-# mreg
+# serfling
 
-Simple and probably already-existing python package for doing some matrix regression for no reason. **numpy** is a dependency.
+Regression by matrix approach for the serfling's flu model. At time $t$, the number of infectives is given by
+$$f(t) = \sum_{i=0}^d t^i + \sum_{i=1}^r \Bigg(\cos\left(\frac{2\pi t}{\omega_i}\right) + \sin\left(\frac{2\pi t}{\omega_i}\right)\Bigg)$$
+where $d$ is the degree upto which you wish to consider the polynomial terms, and $r$ is the number of pairs of $\sin$ and $\cos$ terms corresponding to cycle lengths $\omega_1,\omega_2,\ldots,\omega_r$.
+
+### Installation
+
+Install the package by running
+
+```
+pip install git+"https://github.com/zplus11/serfling"
+```
 
 ### Usage
 
@@ -52,6 +62,8 @@ array([ 787.28656043,   -2.62617957, -345.25924634, -325.31274084,
          76.24631779, -278.56634957])
 ```
 
--
+which are the required regression coefficients.
+
+---
 
 See LICENSE

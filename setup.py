@@ -1,10 +1,10 @@
 import setuptools
 
 setuptools.setup(
-    name = "mreg",
+    name = "serfling",
     version = "1.0.0",
     author = "Naman Taggar",
-    description = "Matrix Regression",
+    description = "Serfling model regression using matrix approach",
     long_description = open("README.md").read(),
     long_description_content_type = "text/markdown",
     install_required = ["numpy>=1.21.0"],
