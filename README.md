@@ -1,7 +1,9 @@
 # serfling
 
 Regression by matrix approach for the serfling's flu model. At time $t$, the number of infectives is given by
+
 $$f(t) = \sum_{i=0}^d t^i + \sum_{i=1}^r \Bigg(\cos\left(\frac{2\pi t}{\omega_i}\right) + \sin\left(\frac{2\pi t}{\omega_i}\right)\Bigg)$$
+
 where $d$ is the degree upto which you wish to consider the polynomial terms, and $r$ is the number of pairs of $\sin$ and $\cos$ terms corresponding to cycle lengths $\omega_1,\omega_2,\ldots,\omega_r$.
 
 ### Installation
