@@ -2,9 +2,9 @@
 
 Regression by matrix approach for the serfling's flu model. At time $t$, the number of infectives is given by
 
-$$f(t) = \sum_{i=0}^d a_it^i + \sum_{i=1}^r b_i\Bigg(\cos\left(\frac{2\pi t}{\omega_i}\right) + \sin\left(\frac{2\pi t}{\omega_i}\right)\Bigg)$$
+$$f(t) = \sum_{i=0}^d a_it^i + \sum_{i=1}^r \Bigg(b_i\cos\left(\frac{2\pi t}{\omega_i}\right) + c_i\sin\left(\frac{2\pi t}{\omega_i}\right)\Bigg)$$
 
-where $d$ is the degree upto which you wish to consider the polynomial terms, $r$ is the number of pairs of $\sin$ and $\cos$ terms corresponding to cycle lengths $\omega_1,\omega_2,\ldots,\omega_r$, and $a_i,b_i$'s are regression coefficients.
+where $d$ is the degree upto which you wish to consider the polynomial terms, $r$ is the number of pairs of $\sin$ and $\cos$ terms corresponding to cycle lengths $\omega_1,\omega_2,\ldots,\omega_r$, and $a_i,b_i,c_i$'s are regression coefficients.
 
 ### Installation
 
